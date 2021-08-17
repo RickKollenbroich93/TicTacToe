@@ -28,7 +28,13 @@ function Board(): JSX.Element {
   if (winner === false) {
     return (
       <div>
-        <div className="status">{status}</div>
+        <div className="status">
+          <p>{status}</p>
+
+          <button className="againBtn" onClick={() => location.reload()}>
+            Reset Game!
+          </button>
+        </div>
         <div className="board-row">
           {renderSquare(0)}
           {renderSquare(1)}
