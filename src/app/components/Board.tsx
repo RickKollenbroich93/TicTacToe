@@ -30,11 +30,11 @@ function Board(): JSX.Element {
       <div>
         <div className="status">
           <p>{status}</p>
-
-          <button className="againBtn" onClick={() => location.reload()}>
-            Reset Game!
-          </button>
         </div>
+        <button className="againBtn" onClick={() => location.reload()}>
+          Reset Game!
+        </button>
+
         <div className="boardwraper">
           <div className="board-row">
             {renderSquare(0)}
