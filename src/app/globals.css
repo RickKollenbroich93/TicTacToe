@@ -19,10 +19,16 @@ ul {
   display: table;
 }
 
-.status {
+.statusX {
   margin-bottom: 10px;
   font-size: 1.7rem;
-  color: rgb(255, 209, 110);
+  color: rgb(255, 77, 0);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+.statusO {
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+  color: rgb(172, 255, 47);
   -webkit-text-stroke: 2px rgb(0, 0, 0);
 }
 
