@@ -28,7 +28,7 @@ function Board(): JSX.Element {
   if (winner === false) {
     return (
       <div>
-        <div className="status">
+        <div className={xIsNext ? 'statusX' : 'statusO'}>
           <p>{status}</p>
         </div>
         <button className="againBtn" onClick={() => location.reload()}>
@@ -57,7 +57,7 @@ function Board(): JSX.Element {
   } else {
     return (
       <div>
-        <p>{status}</p>
+        <p className={!xIsNext ? 'statusX' : 'statusO'}>{status}</p>
         <button className="againBtn" onClick={() => location.reload()}>
           Play Again
         </button>
