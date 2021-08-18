@@ -19,7 +19,7 @@ function Board(): JSX.Element {
   }
 
   const winner = calculateWinner(squares);
-  let status;
+  let status: string;
   if (winner) {
     status = 'Player: ' + winner + ' Wins!';
   } else {
