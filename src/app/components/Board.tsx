@@ -65,7 +65,7 @@ function Board(): JSX.Element {
     );
   }
 }
-function calculateWinner(squares: string[]) {
+function calculateWinner(squares: string[]): string | boolean {
   const lines = [
     [0, 1, 2],
     [3, 4, 5],
